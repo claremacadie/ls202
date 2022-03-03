@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <style>
+      fieldset {
+        border: none;
+      }
+      input[type="text"], input[type="email"], input[type="tel"] {
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        width: 30rem;
+      }
+      input[type="radio"] {
+        font-size: 0.5rem;
+      }
+      label, p {
+        font-size: 1rem
+      }
+      select {
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action ="#" method="post">
+      <fieldset>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" /> 
+      </fieldset>
+      
+      <fieldset>
+        <label for="last_name">Last name</label>
+        <input type="text" name="last_name" id="last_name" />
+      </fieldset>
+
+      <fieldset>
+        <label for="email_address">Email Address</label>
+        <input type="email" name="email_address" id="email_address" placeholder="name@domain"/>
+      </fieldset>
+
+      <fieldset>
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" />
+      </fieldset>
+
+      <fieldset>
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option selected>AK</option>
+          <option>AL</option>
+          <option>AR</option>
+          <option>AZ</option>
+          <option>CA</option>
+          <option>CO</option>
+          <option>CT</option>
+          <option>DC</option>
+          <option>DE</option>
+          <option>FL</option>
+          <option>GA</option>
+          <option>HI</option>
+          <option>IA</option>
+          <option>ID</option>
+          <option>IL</option>
+          <option>IN</option>
+          <option>KS</option>
+          <option>KY</option>
+          <option>LA</option>
+          <option>MA</option>
+          <option>MD</option>
+          <option>ME</option>
+          <option>MI</option>
+          <option>MN</option>
+          <option>MO</option>
+          <option>MS</option>
+          <option>MT</option>
+          <option>NC</option>
+          <option>ND</option>
+          <option>NE</option>
+          <option>NH</option>
+          <option>NJ</option>
+          <option>NM</option>
+          <option>NV</option>
+          <option>NY</option>
+          <option>OH</option>
+          <option>OK</option>
+          <option>OR</option>
+          <option>PA</option>
+          <option>RI</option>
+          <option>SC</option>
+          <option>SD</option>
+          <option>TN</option>
+          <option>TX</option>
+          <option>UT</option>
+          <option>VA</option>
+          <option>VT</option>
+          <option>WA</option>
+          <option>WI</option>
+          <option>WV</option>
+          <option>WY</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="zip_code">Zip Code</label>
+        <input type="tel" name="zip" id="zip" minlength="5" maxlength="5" placeholder="#####" />
+      </fieldset>
+
+      <fieldset>
+        <p>Which of these colors do you like best?</p>
+        <label>
+          <input type="radio" name="favorite_color" value="Red" checked />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="favorite_color" value="Orange" />
+          Orange
+        </label>
+        <label>
+          <input type="radio" name="favorite_color" value="Yellow" />
+          Yellow
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>Which web technologies do you want to learn?</p>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="HTML" />
+          HTML
+        </label>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="CSS"/>
+          CSS
+        </label>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="Javascript" />
+          Javascript
+        </label>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="Ruby"/>
+          Ruby
+        </label>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="Rails" />
+          Rails
+        </label>
+        <label>
+          <input type="checkbox" name="web_tchnology" value="Django" />
+          Django
+        </label>
+      </fieldset>
+
+      <fieldset>
+          <textarea id="message" name="message" rows="6" cols="80" placeholder="Please write your message here."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <input type="hidden" name="datestamp" value="2022-02-19" />
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" value="Send"/>
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Photo Gallery</title>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=devise-width, initial-scale=1" />-->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        max-width: 1000px;
+        min-width: 500px;
+      }
+
+      figure {
+        margin: 20px 0;
+      }
+      
+      .gallery {
+        column-gap: 20px;
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-template-areas:
+          "photo-2  photo-3  photo-4  photo-5";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px 0;
+      }
+      
+      h1 {
+        align-self: center;
+        grid-area: header;
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      img {
+        background-color: cyan;
+        border: 2px solid cyan;
+        width: 100%;
+      }
+      
+      #photo-2 {
+        grid-area: photo-2;
+        width: 100%;
+      }
+      
+      #photo-3 {
+        grid-area: photo-3;
+        width: 100%;
+      }
+
+      #photo-4 {
+        grid-area: photo-4;
+      }
+
+      #photo-5 {
+        grid-area: photo-5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Photo Gallery</h1>
+
+    <figure>
+      <img id="photo-1" src="https://www.comedywildlifephoto.com/images/gallery/0/00001080_t.jpg" alt="blue bug" />
+      <figcaption>Happy Blue Bug!</figcaption>
+    </figure>
+    
+    <div class="gallery">
+      <img id="photo-2" src="https://www.comedywildlifephoto.com/images/gallery/4/00001054_t.jpg" alt="happy frog" />
+      <img id="photo-3" src="https://www.comedywildlifephoto.com/images/gallery/7/00001057_t.jpg" alt="warrior lizard" />
+      <img id="photo-4" src="https://www.comedywildlifephoto.com/images/gallery/8/00001068_t.jpg" alt="yellow-faced bug" />
+      <img id="photo-5" src="https://www.comedywildlifephoto.com/images/gallery/4/00001084_t.jpg" alt="laughing snake" />
+    </div>
+
+    <footer>
+      Images taken from <a href="https://www.comedywildlifephoto.com/gallery/finalists/2021_finalists.php">Comedy Wildlife Photos 2021</a>
+    </footer>
+  </body>
+</html>

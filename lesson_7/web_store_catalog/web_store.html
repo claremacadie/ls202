@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Store</title>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=devise-width, initial-scale=1" /> -->
+    <!-- <link rel="stylesheet" href="filename.css" /> -->
+    <style>
+      @import url("whitespace-reset.css");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+        font: normal 16px Helvetica, Arial, sans-serif;
+        }
+
+      *, *::before, *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        background-color: #ffd505;
+        color: black;
+      }
+
+      header {
+        background-color: #057ec1;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: white;
+        margin: 0 40px 30px 40px;
+        padding: 30px 70% 30px 25px;
+      }
+      
+      h1 {
+        font-size: 2.4rem;
+      }
+      
+      main {
+        background-color: #ececec;
+        color: black;
+        margin: 0 40px 70px 40px;
+      }
+      
+      h2 {
+        font-size: 2rem;
+        padding: 25px 70% 30px 25px;
+      }
+    
+      ul {
+        display: grid;
+        grid-template-areas:
+          "prod1  prod2  prod3  prod4"
+          "prod5  prod6  prod7  prod8";
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 20px 0 20px;
+        padding: 0 0 50px 0;
+        grid-gap: 20px 20px;
+      }
+
+      li {
+        background-color: white;
+        padding: 15px;
+      }
+
+      figure {
+        height: 160px;
+        width: 100%;
+      }
+      
+      img {
+        display: block;
+        height: 140px;
+        margin: 0 auto;
+        width: auto;
+      }
+
+      #aurelia {
+        grid-area: prod1;
+      }
+
+      #polucaryum {
+        grid-area: prod2;
+      }
+
+      #chlorelligerum {
+        grid-area: prod3;
+      }
+
+      #sonneborni {
+        grid-area: prod4;
+      }
+
+      #ugandae {
+        grid-area: prod5;
+      }
+
+      #woodruffi {
+        grid-area: prod6;
+      }
+
+      [type="checkbox"] {
+        display: none;
+      }
+
+      input:checked + figure img {
+        height: auto;
+        left: 50%;
+        margin: 0 0 0 -200px;
+        position: absolute;
+        top: 100px;
+        width: 400px;
+        z-index: 2;
+      }
+
+      /* Whichever image is clicked is within an <input> element, 
+      so that input is clicked and the <figure> element immediately 
+      after that <input> has a ::before child element created, 
+      which is fixed over the whole page, has empty content, is
+      opaque and has a z-index of 1, that is between the page 
+      (defaulted to 0) and the enlarged figure that has a z-index of 2 */
+      input:checked + figure::before {
+        background-color: rgba(0, 0, 0, 0.4);
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+      }
+
+      label {
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Paramiicio</a></h1>
+    </header>
+
+    <main>
+      <h2>All Products</h2>
+
+      <ul>
+        <li id="aurelia">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/aurelia.jpg" alt="Aurelia" />
+            </figure>
+            <h3>Aurelia</h3>
+            <p>$12.99</p>
+          </label>
+        </li>
+        <li id="polycaryum">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/polycaryum.jpg" alt="Polycaryum" />
+            </figure>
+            <h3>Polycaryum</h3>
+            <p>$12.99</p>
+          </label>
+        </li>
+        <li id="chlorelligerum">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/chlorelligerum.jpg" alt="Chlorelligerum" />
+            </figure>
+            <h3>Chlorelligerum</h3>
+            <p>$12.99</p>
+          </label>
+        </li>
+        <li id="sonneborni">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/sonneborni.jpg" alt="Sonneborni" />
+            </figure>
+            <h3>Sonneborni</h3>
+            <p>$12.99</p>
+          </label>
+        </li>
+        <li id="ugandae">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/ugandae.jpg" alt="Ugandae" />
+            </figure>
+            <h3>Ugandae</h3>
+            <p>$12.99</p>
+          </label>
+        </li>
+        <li id="woodruffi">
+          <label>
+            <input type="checkbox" />
+            <figure>
+              <img src="images/woodruffi.jpg" alt="Woodruffi" />
+            </figure>
+            <h3>Woodruffi</h3>
+            <p>$12.99</p>
+          </label>
+        </li> 
+      </ul>
+    </main>
+  </body>
+</html>

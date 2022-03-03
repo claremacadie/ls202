@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Photo Gallerty</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        max-width: 1000px;
+        min-width: 500px;
+      }
+      
+      figure {
+        margin: 10px 0;
+      }
+
+      h1 {
+        background-color: blue;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      #photo-2 {
+        grid-area: photo2;
+      }
+      
+      #photo-3 {
+        grid-area: photo3;
+      }
+
+      #photo-4 {
+        grid-area: photo4;
+      }
+
+      #photo-5 {
+        grid-area: photo5;
+      }
+
+      #photo-6 {
+        grid-area: photo6;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .gallery {
+        column-gap: 20px;
+        display: grid;
+        grid-auto-rows: min-content;
+        grid-template-areas:
+        "photo2 photo3  photo4  photo5";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px 0;
+      }
+      
+      </style>
+  </head>
+  
+  <body>
+    <h1>Photo Gallery</h1>
+    
+    <figure>
+      <img id="photo-1" src="IMG_0043.JPG" alt />
+      <figcaption>Photo 1</figcaption>
+    </figure>
+    
+    <div class="gallery">
+      <img id="photo-2" src="image1.jpeg" alt />
+      <img id="photo-3" src="IMG_0213.jpg" alt />
+      <img id="photo-4" src="image5.jpeg" alt />
+      <img id="photo-5" src="IMG_0308.jpg" alt />
+    </div>  
+  </body> 
+</html>

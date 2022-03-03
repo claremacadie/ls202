@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nutrition Facts</title>
+    <meta charset="utf-8" />
+    <style>
+      /*  
+      */
+      body {
+        border: 0.25rem solid white;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      h1 {
+        font-size: 5rem;
+        margin: 0;
+        margin-bottom: -0.5rem;
+        padding: 0;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0rem;
+        padding: 0;
+      }
+      .major-break {
+        background-color: white;
+        height: 1.5rem;
+      }
+      .minor-break {
+        background-color: white;
+        height: 0.5rem;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      p:last-of-type {
+        padding-left: 0.5rem;
+      }
+      table {
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .serving th {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: left;
+      }
+      .nutrients th {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: right;
+      }
+      .align-right {
+        text-align: right;
+      }
+      .percentage-nutrient {
+        font-weight: bold;
+        text-align: right;
+      }
+      .sub-nutrient {
+        padding-left: 1.5rem;
+      }
+      td {
+        font-size: 1.5rem;
+        border-bottom: 1px solid white;
+      }
+      .nutrients td.sub-nutrient {
+        padding-left: 2rem;
+      }
+      .percentage-vitamins {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nutrition Facts</h1>
+      <h2>Serving Size 2/3 cup (55g)</h2>
+      <h2>Servings Per Container About 8</h2>
+    </header>
+    <hr class="major-break">
+    <table class="serving">
+      <thead>
+        <tr>
+          <th colspan="2">Amount Per Serving</th>
+        </tr>
+        <tr>
+          <td><strong>Calories</strong> 230</td>
+          <td class="align-right">Calories from Fat 40</td>
+        </tr>
+      </thead>
+    </table>
+    <hr class="minor-break">
+    <table class="nutrients">
+      <thead>
+        <tr>
+          <th colspan="2">% Daily Value*</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Total Fat</strong> 8g</td>
+          <td class="percentage-nutrient">12%</td>
+        </tr>
+        <tr>
+          <td class="sub-nutrient">Saturated Fat 1g</td>
+          <td class="percentage-nutrient">5%</td>
+        </tr>
+        <tr>
+          <td class="sub-nutrient"><em>Trans</em> Fat 0g</td>
+          <td class="percentage-nutrient"></td>
+        </tr>
+        <tr>
+          <td><strong>Cholesterol</strong> 0mg</td>
+          <td class="percentage-nutrient">0%</td>
+        </tr>
+        <tr>
+          <td><strong>Sodium</strong> 160mg</td>
+          <td class="percentage-nutrient">7%</td>
+        </tr>
+        <tr>
+          <td><strong>Total Carbohydrate</strong> 37g</td>
+          <td class="percentage-nutrient">12%</td>
+        </tr>
+        <tr>
+          <td class="sub-nutrient">Dietary Fiber 4g</td>
+          <td class="percentage-nutrient">16%</td>
+        </tr>
+        <tr>
+          <td class="sub-nutrient">Sugars 1g</td>
+          <td class="percentage-nutrient"></td>
+        </tr>
+        <tr>
+          <td><strong>Protein</strong> 3g</td>
+          <td class="percentage-nutrient"></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="major-break">
+    <table>
+      <tr>
+        <td>Vitamin A</td>
+        <td class="percentage-vitamins">10%</td>
+      </tr>
+      <tr>
+        <td>Vitamin C</td>
+        <td class="percentage-vitamins">8%</td>
+      </tr>
+      <tr>
+        <td>Calcium</td>
+        <td class="percentage-vitamins">20%</td>
+      </tr>
+      <tr>
+        <td>Iron</td>
+        <td class="percentage-vitamins">45%</td>
+      </tr>
+    </table>
+    <p>
+      * Percent Daily Values are based on a 2,000 calorie diet.
+    </p>
+    <p>
+      Your daily value may be higher or lower depending on your calorie needs.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Calories:</th>
+          <th>2,000</th>
+          <th>2,500</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Fat</td>
+          <td>Less than</td>
+          <td>65g</td>
+          <td>80g</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

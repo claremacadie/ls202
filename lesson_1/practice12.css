@@ -1,0 +1,23 @@
+h2.morning {
+  color: black;
+}
+p.morning {
+  font-weight: bold;
+}
+
+h2.afternoon {
+  color: blue;
+}
+
+p.afternoon {
+  font-style: italic;
+}
+
+h2.evening {
+  color: purple;
+}
+
+ul.evening {
+  list-style: none;
+  padding-left: 0;
+}

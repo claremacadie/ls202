@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Photo Gallerty</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: black;
+        max-width: 1000px;
+      }
+      
+      figure {
+        margin: 10px 0;
+      }
+
+      figcaption {
+        border: 1px solid cyan;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 5px;
+        width: max-content;
+      }
+
+      .gallery {
+        column-gap: 20px;
+        display: grid;
+        grid-template-areas:
+        "photo2 photo3  photo4  photo5"
+        "photo6 photo7  photo8  photo9";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+        margin: 20px 0;
+      }
+
+      @media screen and (max-width: 599px) {
+        .gallery {
+          column-gap: 20px;
+          display: grid;
+          grid-template-areas:
+          "photo2 photo3"
+          "photo4 photo5"
+          "photo6 photo7"
+          "photo8 photo9";
+          grid-template-columns: 1fr 1fr;
+          row-gap: 20px;
+          margin: 20px 0;
+        }
+      }
+
+      @media screen and (min-width: 600px) and (max-width: 899px) {
+        .gallery {
+          column-gap: 20px;
+          display: grid;
+          grid-template-areas:
+          "photo2 photo3 photo4"
+          "photo5 photo6 photo7"
+          "photo8 photo9 photo10";
+          grid-template-columns: 1fr 1fr 1fr;
+          row-gap: 20px;
+          margin: 20px 0;
+        }
+      }
+      
+      h1 {
+        background-color: cyan;
+        color: black;
+        padding: 1rem;
+        text-align: center;
+      }
+      
+      img {
+        border: 1px solid cyan;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      #photo-2 {
+        grid-area: photo2;
+      }
+      
+      #photo-3 {
+        grid-area: photo3;
+      }
+
+      #photo-4 {
+        grid-area: photo4;
+      }
+
+      #photo-5 {
+        grid-area: photo5;
+      }
+
+      #photo-6 {
+        grid-area: photo6;
+      }
+
+      #photo-7 {
+        grid-area: photo7;
+      }
+
+      #photo-8 {
+        grid-area: photo8;
+      }
+
+      #photo-9 {
+        grid-area: photo9;
+      }
+
+      #photo-10 {
+        display: none;
+      }
+      
+      </style>
+  </head>
+  
+  <body>
+    <h1>Photo Gallery</h1>
+    
+    <figure>
+      <img id="photo-1" src="IMG_1067.JPG" alt />
+      <figcaption>Cuddly cats</figcaption>
+    </figure>
+    
+    <div class="gallery">
+      <img id="photo-2" src="image1.jpeg" alt />
+      <img id="photo-3" src="IMG_0043.JPG" alt />
+      <img id="photo-4" src="image5.jpeg" alt />
+      <img id="photo-5" src="IMG_0213.JPG" alt />
+      <img id="photo-6" src="IMG_0308.JPG" alt />
+      <img id="photo-7" src="IMG_0447.JPG" alt />
+      <img id="photo-8" src="IMG_0602.JPG" alt />
+      <img id="photo-9" src="IMG_0647.JPG" alt />
+      <img id="photo-10" alt />
+    </div>  
+  </body> 
+</html>

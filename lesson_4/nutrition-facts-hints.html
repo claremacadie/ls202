@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <style>
+    html {
+      font-size: 28px;
+      font-family: sans-serif;
+      border: 2px solid black;
+      margin-left: 10px;
+      width: 630px;
+    }
+    dl, dt, dd {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0.1rem 0;
+    }
+    dt {
+      display: inline-block;
+      width: 49%;
+    }
+    dd {
+      display: inline-block;
+      text-align: right;
+      width: 49%
+    }
+    header {
+      border-bottom: 25px solid black;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 0;
+    }
+    h2:last-of-type {
+      padding-bottom: 8px;
+    }
+    h3 {
+      border-bottom: 1px solid black;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.4rem 0rem;
+      margin: 0;
+    }
+    .indent {
+      text-indent: 1em;
+    }
+    [scope="col"] {
+      padding-top: 10px;
+    }
+    [scope="row"] {
+      font-weight: normal;
+    }
+    table {
+      border-collapse: collapse;
+      font-size: 1rem;
+      margin: 5px 0;
+      text-align: left;
+      width: 100%;
+    }
+    td {
+      border-top: 1px solid black;
+    }
+    table.nutrient td {
+      text-align: right;
+    }
+    table.nutrient [scope="col"] {
+      border-top: 15px solid black;
+      font-weight: bold;
+      text-align: right;
+    }
+    table.nutrient th {
+      border-top: 1px solid black;
+    }
+    table.vitamin {
+      border-top: 20px solid black;
+      margin-bottom: 0.5rem;
+    }
+    table.vitamin td {
+      text-align: right;
+    }
+    table.vitamin th {
+      border-top: 1px solid black;
+    }
+    table.footer td {
+      border: none;
+      font-size: 0.8rem;
+    }
+    table.calorie {
+      font-size: 0.75rem;
+      margin-bottom: 20px;
+    }
+    table.calorie [scope="col"] {
+      border-bottom: 1px solid black;
+      font-weight: normal;
+    }
+    table.calorie [scope="row"] {
+      width: 40%;
+    }
+    table.calorie td {
+      border: none;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nutrition Facts</h1>
+      <h2>Serving Size 2/3 cup (55g)</h2>
+      <h2>Servings Per Container About 8</h2>
+    </header>
+    <main>
+      <h3>Amount Per Serving</h3>
+      <dl>
+        <dt><b>Calories</b> 230</dt>
+        <dd>Calories from Fat 40</dd>
+      </dl>
+      <!--Nutrient quantities-->
+      <table class="nutrient">
+        <thead>
+          <th colspan="2" scope="col">% Daily Value *</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><b>Total Fat</b> 8g</th>
+            <td>12%</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row">Saturated Fat 1g</th>
+            <td>5%</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row"><i>Trans</i> Fat 0g</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><b>Cholesterol</b> 0mg</th>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <th scope="row"><b>Sodium</b> 160mg</th>
+            <td>7%</td>
+          </tr>
+          <tr>
+            <th scope="row"><b>Total Carbohydrate</b> 37g</th>
+            <td>12%</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row">Dietary Fiber 4g</th>
+            <td>16%</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row">Sugars 1g</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><b>Protein</b> 3g</th>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--Vitamin table-->
+      <table class="vitamin">
+        <tr>
+          <th scope="row">Vitamin A</th>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <th scope="row">Vitamin C</th>
+          <td>8%</td>
+        </tr>
+        <tr>
+          <th scope="row">Calcium</th>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <th scope="row">Iron</th>
+          <td>45%</td>
+        </tr>
+      </table>
+
+      <!--Footer paragraph-->
+        <table class="footer">
+          <tr>
+            <td>*</td>
+            <td>Percent Daily Values are based on a 2,000 calorie diet.</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Your daily value may be higher or lower depending on your calorie needs.</td>
+          </tr>
+        </table>
+
+      <!--Calorie table-->
+      <table class="calorie">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Calories:</th>
+            <th scope="col">2,000</th>
+            <th scope="col">2,500</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Total Fat</th>
+            <td>Less than</td>
+            <td>65g</td>
+            <td>80g</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row">Sat Fat</th>
+            <td>Less than</td>
+            <td>20g</td>
+            <td>25g</td>
+          </tr>
+          <tr>
+            <th scope="row">Cholesterol</th>
+            <td>Less than</td>
+            <td>300mg</td>
+            <td>300mg</td>
+          </tr>
+          <tr>
+            <th scope="row">Sodium</th>
+            <td>Less than</td>
+            <td>2,400mg</td>
+            <td>2,400mg</td>
+          </tr>
+          <tr>
+            <th scope="row">Total Carbohydrate</th>
+            <td></td>
+            <td>300g</td>
+            <td>375g</td>
+          </tr>
+          <tr>
+            <th class="indent" scope="row">Dietary Fiber</th>
+            <td></td>
+            <td>25g</td>
+            <td>30g</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
